@@ -27,6 +27,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="editChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="ZH0-bd-KIb"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVI-9w-OMw">
                                 <rect key="frame" x="16" y="259" width="343" height="40"/>
@@ -35,7 +38,7 @@
                                     <constraint firstAttribute="height" constant="40" id="u9A-qy-SDQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="登录">
+                                <state key="normal" title="验证登录">
                                     <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
@@ -51,6 +54,10 @@
                             <constraint firstItem="yVI-9w-OMw" firstAttribute="top" secondItem="25a-2s-v03" secondAttribute="bottom" constant="65" id="wYp-mz-Xsb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginBtn" destination="yVI-9w-OMw" id="25P-aj-8yS"/>
+                        <outlet property="phoneNumTF" destination="25a-2s-v03" id="Gnk-Wd-sxt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

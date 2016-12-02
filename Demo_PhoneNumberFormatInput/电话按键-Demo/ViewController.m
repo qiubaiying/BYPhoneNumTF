@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "BYPhoneNumTF.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet BYPhoneNumTF *phoneNumTF;
+@property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 
 @end
 
@@ -16,13 +19,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.loginBtn.enabled = NO;
+    self.loginBtn.backgroundColor = [UIColor lightGrayColor];
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)editChange:(UITextField *)sender {
+    if (sender.text.length == 13) {
+        self.loginBtn.enabled = YES;
+        self.loginBtn.backgroundColor = [UIColor orangeColor];
+    } else {
+        self.loginBtn.enabled = NO;
+        self.loginBtn.backgroundColor = [UIColor lightGrayColor];
+    }
 }
 
 
