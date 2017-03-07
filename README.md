@@ -2,7 +2,17 @@
 
 这是一个电话号码格式的文本框的框架
 
-## 使用方法：
+
+## 获取
+- CocoaPods
+
+		$ pod 'BYPhoneNumTF', '~> 1.0.0'
+
+- 手动添加
+	
+	将 `BYPhoneNumTF` 文件夹中的 `BYPhoneNumTF.h` `BYPhoneNumTF.m` 拖入工程中即可 
+
+## 使用
 
 - 代码创建
   
