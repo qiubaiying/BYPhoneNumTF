@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
         hey！hey！hey！hey！hey！hey！hey！
                    DESC
 
-  s.homepage     = "https://github/qiubaiying/BYPhoneNumTF"
+  s.homepage     = "https://github.com/qiubaiying/BYPhoneNumTF"
 
 
   s.license      = "MIT"
