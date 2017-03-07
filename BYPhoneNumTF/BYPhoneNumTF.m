@@ -16,6 +16,7 @@
 @implementation BYPhoneNumTF
 
 - (NSString *)plainPhoneNum {
+    
     return [self _noneSpaseString:self.text];
 }
 
